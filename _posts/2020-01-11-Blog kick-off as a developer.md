@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Blog kick-off as a developer"
+title: Blog kick-off as a developer
+subtitle: Why did I start blogging?
 background: '/img/bg_thought.jpg'
 categories: thought
 ---

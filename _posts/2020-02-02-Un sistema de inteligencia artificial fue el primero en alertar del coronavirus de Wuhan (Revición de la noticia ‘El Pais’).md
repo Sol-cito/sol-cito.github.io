@@ -1,9 +1,14 @@
 ---
 layout: post
-title: "Un sistema de inteligencia artificial fue el primero en alertar del coronavirus de Wuhan (Revición de la noticia ‘El Pais’)"
+title: Un sistema de inteligencia artificial fue el primero en alertar del coronavirus de Wuhan
+subtitle: Revición de la noticia ‘El Pais’
 background: '/img/bg_language.jpg'
-categories: thought
+categories: language
 ---
+
+
+
+## Un sistema de inteligencia artificial fue el primero en alertar del coronavirus de Wuhan
 
 
 
@@ -23,3 +28,4 @@ Un AI aplicación que se llama ´BlueDot´que se inventó por una start up canad
 Su estrategia de pronosticar la disperción es basicamente analizar datos en medios en el internet y noticias en más de 30 idiomas diferentes. Recoje lo que la gente y las noticias mencionan, describen o commentan en web y analiza con la technología de la minería de textos.
 También utiliza dos sistema de tradución para que no tenga confusión de recopilar y analizar las cosas que se escriben en idiomas diferentes. Además, analizan los datos de billetes de aviones para que sepa el origen de la enfermedad y siga a donde vaya en el mundo.
 Algunos expertos afirman que no debemos creerlo completamente si se considera el caso de la mapa de gripe que Google inventó y al final cerró por los mal resultados y que no llevaba a cabo bien.
+
