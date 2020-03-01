@@ -4,13 +4,13 @@ title: Thoughts
 description: Epiphany, insight, boot review, etc.
 background: '/img/bg_thought.jpg'
 ---
-<ul>
-    {% for post in site.posts %}
-        {% if post.url contains "thought" %}
-            <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                {{ post.excerpt }}
-            </li>
-        {% endif %}
-    {% endfor %}
-</ul>
+{% for post in site.posts %}
+    {% if post.url contains "thought" %}
+        <article class="post-preview">
+            <a href="{{ post.url }}">
+                <h2 class="post-title">{{ post.title }}</h2>
+            </a>
+            {{ post.excerpt }}
+        </article>
+    {% endif %}
+{% endfor %}
