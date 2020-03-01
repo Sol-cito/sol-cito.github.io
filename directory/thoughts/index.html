@@ -1,0 +1,25 @@
+---
+layout: page
+title: Thoughts
+description: insight, diary, boot review, etc.
+background: '/img/bg_thought.jpg'
+---
+{% for post in site.posts %}
+    {% if post.url contains "thought" %}
+        <article class="post-preview">
+            <a href="{{ post.url }}">
+                <h2 class="post-title">{{ post.title }}</h2>
+                {% if post.subtitle %}
+                    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+                {% else %}
+                    <h3 class="post-subtitle">{{ post.excerpt }}</h3>
+                {% endif %}
+            </a>
+            <p class ="post-meta">Posted by
+                {{site.author}} on {{post.date | date: '%B %d, %Y'}}
+                &middot;
+                {% include read_time.html content = post.content %}
+            </p>
+        </article>
+    {% endif %}
+{% endfor %}

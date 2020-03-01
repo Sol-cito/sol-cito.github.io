@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Thoughts
-description: Epiphany, insight, boot review, etc.
-background: '/img/bg_thought.jpg'
+title: Foreign Language
+description: Enlgish & Español to be more globally connected
+background: '/img/bg_foreignLanguage.jpg'
 ---
 {% for post in site.posts %}
-    {% if post.url contains "thought" %}
+    {% if post.url contains "language" %}
         <article class="post-preview">
             <a href="{{ post.url }}">
                 <h2 class="post-title">{{ post.title }}</h2>
@@ -15,10 +15,8 @@ background: '/img/bg_thought.jpg'
                     <h3 class="post-subtitle">{{ post.excerpt }}</h3>
                 {% endif %}
             </a>
-            <p class="post-meta">Posted by
-                {{site.author}}
-                on
-                {{post.date | date: '%B %d, %Y'}}
+            <p class ="post-meta">Posted by
+                {{site.author}} on {{post.date | date: '%B %d, %Y'}}
                 &middot;
                 {% include read_time.html content = post.content %}
             </p>
