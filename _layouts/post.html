@@ -11,10 +11,9 @@ layout: default
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-md-10 mx-auto">
+        <div class="col-lg-11 col-md-10 mx-auto">
           <div class="post-heading">
             <h1>{{ page.title }}</h1>
-            <div class="col-lg-8 col-md-10 mx-auto">
             {% if page.subtitle %}
             <h2 class="subheading">{{ page.subtitle }}</h2>
             {% endif %}
@@ -23,7 +22,6 @@ layout: default
               on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
               content=page.content %}
             </span>
-          </div>
           </div>
         </div>
       </div>
