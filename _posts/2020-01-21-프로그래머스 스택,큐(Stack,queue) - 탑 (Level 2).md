@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 프로그래머스 스택/큐(Stack/queue) - 탑
+title: 프로그래머스 스택/큐(Stack/queue) - 탑 (Level 2)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
 categories: technology

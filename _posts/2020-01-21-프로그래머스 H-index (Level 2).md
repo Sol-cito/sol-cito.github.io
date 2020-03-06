@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 프로그래머스 정렬  - H-index
+title: 프로그래머스 정렬  - H-index (Level 2)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
 categories: technology
