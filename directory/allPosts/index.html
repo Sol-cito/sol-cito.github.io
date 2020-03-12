@@ -1,11 +1,10 @@
 ---
 layout: page
 title: All the posts
-description: Here are what I have written
+description: What I have written
 background: '/img/bg_main.jpg'
 ---
 {% for post in site.posts %}
-
         <article class="post-preview">
             <a href="{{ post.url }}">
                 <h2 class="post-title">{{ post.title }}</h2>
@@ -21,6 +20,5 @@ background: '/img/bg_main.jpg'
                 {% include read_time.html content = post.content %}
             </p>
         </article>
-
         <hr>      
 {% endfor %}
