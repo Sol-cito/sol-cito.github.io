@@ -4,7 +4,7 @@ title: All the posts
 background: '/img/bg_main.jpg'
 ---
 {% for post in site.posts %}
-    {% if post.url contains "technology" %}
+    <!-- {% if post.url contains "technology" %} -->
         <article class="post-preview">
             <a href="{{ post.url }}">
                 <h2 class="post-title">{{ post.title }}</h2>
@@ -22,6 +22,5 @@ background: '/img/bg_main.jpg'
         </article>
 
         <hr>
-        
-    {% endif %}
+    <!-- {% endif %} -->
 {% endfor %}
