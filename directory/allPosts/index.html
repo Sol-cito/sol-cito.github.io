@@ -4,7 +4,8 @@ title: All the posts
 background: '/img/bg_main.jpg'
 ---
 {% for post in site.posts %}
-         <article class="post-preview">
+    {% if post.url contains "technology" %}
+        <article class="post-preview">
             <a href="{{ post.url }}">
                 <h2 class="post-title">{{ post.title }}</h2>
                 {% if post.subtitle %}
@@ -19,5 +20,8 @@ background: '/img/bg_main.jpg'
                 {% include read_time.html content = post.content %}
             </p>
         </article>
-        <hr> 
- {% endfor %}
+
+        <hr>
+        
+    {% endif %}
+{% endfor %}
