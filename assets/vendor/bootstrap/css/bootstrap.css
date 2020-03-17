@@ -190,6 +190,7 @@ pre {
   margin-bottom: 1rem;
   /* overflow: auto; */
   white-space: pre-wrap;
+  background-color: #f3f4f4
 }
 
 figure {
@@ -533,7 +534,6 @@ pre {
   display: block;
   font-size: 87.5%;
   color: #212529;
-  background-color: #f3f4f4
 }
 
 pre code {
