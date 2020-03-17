@@ -188,7 +188,8 @@ samp {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto;
+  /* overflow: auto; */
+  white-space: pre-wrap;
 }
 
 figure {
@@ -532,6 +533,7 @@ pre {
   display: block;
   font-size: 87.5%;
   color: #212529;
+  background-color: #f3f4f4
 }
 
 pre code {
