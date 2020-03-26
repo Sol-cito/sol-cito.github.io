@@ -534,6 +534,7 @@ pre {
   display: block;
   font-size: 87.5%;
   color: #212529;
+  background-color: #f3f4f4;
 }
 
 pre code {
