@@ -2,7 +2,9 @@
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    <header
+        class="masthead"
+        style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
     {% else %}
         <header class="masthead">
         {% endif %}
@@ -35,9 +37,9 @@
                             <h2 class="post-title">{{ post.title }}</h2>
                             {% if post.subtitle %}
                                 <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-                                <a class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</a>
+                                <a class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</a>
                             {% else %}
-                                <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+                                <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 30 }}</h3>
                             {% endif %}
                         </a>
                         <p class="post-meta">Posted by
