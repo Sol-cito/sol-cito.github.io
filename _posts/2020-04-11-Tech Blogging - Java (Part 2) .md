@@ -75,7 +75,7 @@ JAVA를 만져본 사람들은 한번쯤 궁금해볼 내용이지만, 정작 �
 
 
 
-**<참고>** 혹시 아래와 같은 메시지가 나온다면,
+<**참고**> 혹시 아래와 같은 메시지가 나온다면,
 
 ```
 A JNI error has occurred, please check your installation and try again (...)
@@ -103,7 +103,7 @@ https://www.youtube.com/watch?v=On9mzziI2pU
 
 
 
-**1) 왜 main method는 class 안에 위치하는가? **
+**1) 왜 main method는 class 안에 위치하는가?**
 
 main은 프로그램이 시작하는 method이다. C++같은 프로그램에서는 main method가 클래스 안에 있지 않다.
 
@@ -125,7 +125,7 @@ main을 JVM이 최초로 실행시키도록 설정되어있기 때문에, main�
 
 
 
-**2) 왜 public static 인가 ? **
+**2) 왜 public static 인가 ?**
 
 static으로 선언된 method는 object를 생성하지 않아도 calling할 수 있다.
 
