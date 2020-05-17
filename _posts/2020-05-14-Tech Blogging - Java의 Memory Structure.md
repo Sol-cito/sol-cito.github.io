@@ -1,3 +1,13 @@
+---
+layout: post
+title: "JAVA 파헤치기 (Part 3)"
+subtitle: "JVM의 메모리 구조"
+background: '/img/bg_technology.jpg'
+categories: technology
+
+---
+
+
 ### Java의 Memory Structure
 
 
