@@ -177,7 +177,7 @@ class Road {
 4. 클래스는 1) 도로지나는데 걸리는 시간과 연결마을 id 2개를 int로 가지며, 2)  parameter로 마을id를 넣으면 연결되어있는 다른 마을의 id를 int로 리턴하는 메소드를 가진다.
 
 5. 1번 마을부터 '재귀'를 돈다. 마을에 연결된 도로 ArrayList를 메소드 파라미터로 넣어 연결된 상대 마을의 id를 얻어, 그 상대 마을로 다시 재귀를 호출한다.
-6.  또 다른 마을로 갈 때 도로 object의 소요시간을 더한 값과 방문체크 결과도 함께 파라미터로 넘긴다.
+6. 또 다른 마을로 갈 때 도로 object의 소요시간을 더한 값과 방문체크 결과도 함께 파라미터로 넘긴다.
 7. 재귀 종료시점 : 더 이상 갈 수 있는 마을이 없거나 배달을 갔을 경우 걸리는 시간이 K보다 커질 때 종료된다.
 8. 재귀가 끝나고 return되는 마을들의 HashMap을 전부 true로 replace한다.
 9. 재귀가 다 끝나고 HashMap에서 true인 것의 개수가 정답이다.
@@ -188,10 +188,110 @@ class Road {
 
 구글에 다른 사람들의 답변을 보니 '다익스트라 알고리즘'을 사용해서 풀었다는 후기가 많아서, 주말동안 해당 알고리즘의 내용을 공부해서 다시 풀어볼 계획이다.
 
+ = > 5월 24일에 다익스트라 알고리즘을 써서 문제에 재도전했고, 테스트케이스를 모두 통과했다. 소스는 아래에.
 
+ 
 
 ##### 알고리즘 스터디 Feedback
 
 스터디원 중 한명이 DFS를 Stack으로 돌 때 방문체크를 '마을'을 중심으로 하지 않고 '도로'를 기준으로 한다면 모든 마을을 다 방문할 수 있지 않을까 하는 아이디어를 내서, 이 방법으로 한번 시도해볼까 생각중이다.
 
-그러나 문제는, 이미 재귀가 32번을 통과하지 못하여 Queue를 써서 BFS로 탐색하는 방법을 시도했었는데, 기존 재귀 로직과 소요시간이 큰 차이가 없어서 효과가 있을지는 잘 모르겠다.
+그러나 문제는, 이미 재귀가 32번을 통과하지 못하여 Queue를 써서 BFS로 탐색하는 방법을 시도했었는데, 기존 재귀 로직과 소요시간이 큰 차이가 없어서 효과가 있을지는 잘 모르겠다.\
+
+ = > 지환이와 스터디 도중 지환이에게 소스코드를 보여주었고, 지환이는 DFS를 돌리되 탐색 시 가장 짧은 경로(Road)만을 선택하는 방식으로 문제를 멋지게 풀었다. 즉  DFS나 BFS로 접근해도 문제를 풀 수 있으나, 내가 모든 경로를 탐색하는 방법으로 접근하여 마지막 테스트케이스에서 시간초과가 난 것 같다. 지환이에게 한 수 배웠다.
+
+
+
+---
+
+#### My first solution (Java) - Suceess (Dijkstra Algorithm)
+
+2020.05.24 Try again and pass the test
+
+```
+class Solution {
+    public int solution(int N, int[][] road, int K) {
+        int answer = 0;
+        int[][] arrDistance = new int[N + 1][N + 1];
+
+        /* arrDistance 값 모두 2147483647로 초기화 */
+        for (int i = 0; i < arrDistance.length; i++) {
+            for (int j = 0; j < arrDistance.length; j++) {
+                arrDistance[i][j] = Integer.MAX_VALUE;
+            }
+            arrDistance[i][i] = 0;
+        }
+
+        /* road의 값을 짧은 것만 찾아서 arrDistance에 넣어줌 */
+        for (int i = 0; i < road.length; i++) {
+            int village_1 = road[i][0];
+            int village_2 = road[i][1];
+            int distance = road[i][2];
+
+            int value1 = arrDistance[village_1][village_2];
+            if (distance < value1) {
+                arrDistance[village_1][village_2] = distance;
+            }
+            int value2 = arrDistance[village_2][village_1];
+            if (distance < value2) {
+                arrDistance[village_2][village_1] = distance;
+            }
+        }
+        int[] journey = arrDistance[1]; // 첫 행을 journey로 잡음
+        int[] visitCheck = new int[journey.length];
+        visitCheck[1] = 1;
+        int cnt = 1;
+        while (cnt < N) {
+            //journey에서 거리가 가장 짧은 노드 찾음
+            int maxValue = Integer.MAX_VALUE;
+            int theClosestNode = Integer.MAX_VALUE;
+            for (int i = 1; i < journey.length; i++) {
+                if (visitCheck[i] == 0 && journey[i] < maxValue) {
+                    theClosestNode = i;
+                    maxValue = journey[i];
+                }
+            }
+            visitCheck[theClosestNode] = 1;
+            int nodeValue = journey[theClosestNode]; // 제일 짧은 노드까지 가는 distance
+            /* journey에서 가장 짧은 노드를 기준으로 journey를 갱신 */
+            for (int i = 1; i < arrDistance[theClosestNode].length; i++) {
+                int journeyValue = journey[i];
+                int comparedValue = arrDistance[theClosestNode][i];
+                if (visitCheck[i] == 0 && comparedValue != Integer.MAX_VALUE && nodeValue + comparedValue < journeyValue) {
+                    journey[i] = nodeValue + comparedValue;
+                }
+            }
+            cnt++;
+        }
+
+        for (int i = 1; i < journey.length; i++) {
+            if (journey[i] <= K) {
+                answer++;
+            }
+        }
+        return answer;
+    }
+}
+```
+
+
+
+---
+
+#### My logic & feedback
+
+##### 다익스트라 알고리즘으로 풀이
+
+다익스트라 알고리즘은 한 정점에서 다른 모든 정점까지 가는 최단 경로를 찾는 알고리즘이다.
+
+만약 노드 사이의 weight 가 주어져있지 않고, 단순히 노드 개수만으로 최단 경로를 찾는 문제라면(ex. 5x5 map에서의 최단경로) DFS나 BFS로 풀어도 무리가 없을 것이다.
+
+그런데 만약 노드 사이의 거리가 weight로 각각 다르게 주어져 있다면? DFS나 BFS 풀이를 전개할 때 Distance를 따로 고려해주어야 하니 문제 풀이가 복잡해지게 된다.
+
+이런 경우 2차원 배열로 '노드 간 거리를 갱신해나가는' 다익스트라 알고리즘을 활용하면 문제를 편하게 해결할 수 있다.
+
+다익스트라 알고리즘 또한 하나의 '다이내믹 프로그래밍'이라 생각한다. 
+
+다이내믹 프로그래밍이 그렇듯이, 해당 접근방식에 익숙하지 않다면 풀이방법을 생각해내기가...나같은 일반인의 수준에서는 굉장히 어려운 것 같다.
+
+다익스트라 알고리즘의 내용은 따로 포스팅하는 것이 나을 것 같다.
