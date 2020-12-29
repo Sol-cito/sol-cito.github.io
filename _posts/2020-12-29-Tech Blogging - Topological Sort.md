@@ -31,7 +31,7 @@ categories: technology
 
 두 문제 모두 공통점이 있는데,
 
-**순서가 있는 노드 쌍(pair)이 입력으로 주어진다는 점, **
+**순서가 있는 노드 쌍(pair)이 입력으로 주어진다는 점,**
 
 **그래프는 모두 사이클이 없는 방향 그래프(Directed Acyclic Graph)**라는 점이다.
 
@@ -67,7 +67,7 @@ categories: technology
 
 **DFS 결과의 맨 마지막 노드**에서부터 분기를 거꾸로 따라가는 방법이 유효하다.
 
-![image_1](img/posts/2020-12-29-topological sort/image_1.png)
+![image_1](/img/posts/2020-12-29-topological sort/image_1.png)
 
 위 그래프에서, 
 
@@ -105,7 +105,7 @@ DFS방문 시 기본적으로 활용하는 visit이라는 배열 외에,
 
 아래 그림을 보면,
 
-![image_2](img/posts/2020-12-29-topological sort/image_2.png)
+![image_2](/img/posts/2020-12-29-topological sort/image_2.png)
 
 위상정렬의 결과는 1 - 2 - 3 - 4 - 5 또는 1 - 3 - 2 - 4 - 5 가 되어야 한다.
 
@@ -145,7 +145,7 @@ DFS방문 시 기본적으로 활용하는 visit이라는 배열 외에,
 
 아래 그림을 보자.
 
-![image_3](img/posts/2020-12-29-topological sort/image_3.png)
+![image_3](/img/posts/2020-12-29-topological sort/image_3.png)
 
 4 - 3 - 5 에 사이클이 존재한다.
 

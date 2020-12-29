@@ -157,6 +157,8 @@ Singleton@10f87f48
 
 
 
-- 그 외 많은 해결방식이 있다. 아래 링크에 다른 방식들이 자세히 수록되어 있음.
+- 그 외 많은 해결방식이 있다. [링크]( http://wiki.hash.kr/index.php/%EC%8B%B1%EA%B8%80%ED%86%A4%ED%8C%A8%ED%84%B4#.EC.9D.B4.EB.A5.B8_.EC.B4.88.EA.B8.B0.ED.99.94_.EB.B0.A9.EC.8B.9D)에 다른 방식들이 자세히 수록되어 있음.
 
-  http://wiki.hash.kr/index.php/%EC%8B%B1%EA%B8%80%ED%86%A4%ED%8C%A8%ED%84%B4#.EC.9D.B4.EB.A5.B8_.EC.B4.88.EA.B8.B0.ED.99.94_.EB.B0.A9.EC.8B.9D
+
+
+

@@ -7,7 +7,7 @@ url:                "https://sol-cito.github.io/"
 
 # Social Profiles
 twitter_username:   
-github_username:    SoulfulSol
+github_username:    Sol-cito
 facebook_username:  facebook
 linkedin_username:
 
@@ -16,6 +16,11 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
+# Code highlighting
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:
