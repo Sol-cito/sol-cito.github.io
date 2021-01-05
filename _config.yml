@@ -34,4 +34,4 @@ permalink: /:categories/:year/:month/:day/:title
 google_fonts : "Nanum+Gothic:400,700"
 
 # Disqus setting
-disqus_shortname: sol-cito-github-io.disqus.com
+disqus_shortname: sol-cito-github-io
