@@ -1,14 +1,13 @@
---- 
-layout: default 
+---
+layout: default
 ---
 
 <!-- Page Header -->
 {% if page.background %}
-    <header
-        class="masthead"
-        style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header class="masthead"
+    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
     {% else %}
-        <header class="masthead">
+    <header class="masthead">
         {% endif %}
         <div class="overlay"></div>
         <div class="container">
@@ -17,7 +16,7 @@ layout: default
                     <div class="page-heading">
                         <h1>{{ site.title }}</h1>
                         {% if site.description %}
-                            <span class="subheading">{{ site.description }}</span>
+                        <span class="subheading">{{ site.description }}</span>
                         {% endif %}
                     </div>
                 </div>
@@ -26,48 +25,55 @@ layout: default
     </header>
 
     <div class="container">
+        <div style="float: left;">
+            <img src="/img/bg_prifile.jpg">
+            <div style="margin-top: 10%;">
+                <p class="profile_name_span">Dasol Kim</p>
+                <p class="profile_span"> <img class="customized_svg" src="/img/svg/location.svg">Seoul, South Korea</p>
+                <p class="profile_span"> <img class="customized_svg" src="/img/svg/company.svg">LG CNS</p>
+                <a href="https://github.com/{{ site.github_username }}" class="profile_span"> <img class="customized_svg" src="/img/svg/github.svg">GitHub</a>
+                <br>
+                <a href="mailto:{{ site.email | encode_email }}" class="profile_span"> <img class="customized_svg"
+                        src="/img/svg/email.svg">Email</a>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-lg-10 col-md-10 mx-auto">
-
+                <p style="color:grey; margin: 0%;"><b>Recent Posts</b></p>
+                <hr>
                 {{ content }}
 
                 <!-- Home Post List -->
                 {% for post in site.posts limit : 5 %}
 
-                    <article class="post-preview">
-                        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-                            <h2 class="post-title">{{ post.title }}</h2>
+                <article class="post-preview">
+                    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                        <h3 class="post-title">{{ post.title }}</h2>
                             {% if post.subtitle %}
-                                <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-                                <a class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</a>
-                            {% else %}
-                                <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 30 }}</h3>
-                            {% endif %}
-                        </a>
-                        <p class="post-meta">Posted by
-                            {% if post.author %}
-                                {{ post.author }}
-                            {% else %}
-                                {{ site.author }}
-                            {% endif %}
-                            on
-                            {{ post.date | date: '%B %d, %Y' }}
-                            &middot;
-                            {% include read_time.html content = post.content %}
-                        </p>
-                    </article>
-
-                    <hr>
-
+                            <h4 class="post-subtitle">{{ post.subtitle }}
+                        </h3>
+                        {% endif %}
+                    </a>
+                    <p class="post-meta">Posted by
+                        {% if post.author %}
+                        {{ post.author }}
+                        {% else %}
+                        {{ site.author }}
+                        {% endif %}
+                        on
+                        {{ post.date | date: '%B %d, %Y' }}
+                        &middot;
+                        {% include read_time.html content = post.content %}
+                    </p>
+                </article>
                 {% endfor %}
-
-                <!-- Pager -->
-                <div class="clearfix">
-                    <a
-                        class="btn btn-primary float-right"
-                        href="{{"/directory/allPosts" | relative_url }}">View All Posts &rarr;</a>
-                </div>
-
             </div>
+        </div>
+        <hr>
+        <!-- Pager -->
+        <div class="clearfix">
+            <a class="btn btn-link float-right" href="{{" /directory/allPosts" | relative_url }}">View All Posts
+                &rarr;</a>
         </div>
     </div>
