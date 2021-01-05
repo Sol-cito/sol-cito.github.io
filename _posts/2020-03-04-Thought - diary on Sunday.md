@@ -4,6 +4,7 @@ title: "3월 첫 주의 짧은 글"
 subtitle: "일상, Git Blog 개설의 고통과 스트레스, 그리고 보상"
 background: '/img/bg_thought.jpg'
 categories: thought
+comments: false
 ---
 
 
