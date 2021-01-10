@@ -56,7 +56,7 @@ categories: technology
 
 교보문고 사이트를 접속했을 때(https가 아니라 http이다),  다수의 패킷들 중 다음과 같은 패킷 내용을 확인할 수 있다.
 
-![image-20210111003128520](P:\Network\img\packet_1.png)
+![image-20210111003128520](\img\posts\2021-01-11-Tech Blogging - Network Packet\packet_1.png)
 
 맨 위 패킷 내용을 보면, 
 
@@ -82,7 +82,7 @@ categories: technology
 
 
 
-![image-20210111003128520](P:\Network\img\packet_2.png)
+![image-20210111003128520](\img\posts\2021-01-11-Tech Blogging - Network Packet\packet_2.png)
 
 패킷은 위 과정처럼 **캡슐화**과정을 거쳐서 완성된다.
 
