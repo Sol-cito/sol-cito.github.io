@@ -56,7 +56,7 @@ categories: technology
   - 이런 여러가지 경우에 CPU가 작동을 멈추므로 **CPU가 쉬지않고 다른 응용프로그램을 실행하는 편이 사용자의 정신건강에 좋다.**
   - CPU가 작동을 멈추는 상황을 **Blocking**이라고 기술적으로 표현한다.
 
-```C
+```c++
 #include <unist.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -64,8 +64,9 @@ categories: technology
 
 int main(){
     fd = open("data.txt", O_RDONLY);
-	/* 위 open() 함수는 파일을 여는 system call API로, 해당 함수의 return값을 받기 전 까지는 
-     * main()함수 전체가 잠시 멈춰있어야 한다 -- > 프로그램의 실행이 pause되고 CPU는 작동을 멈춘다.
+	  /* 위 open() 함수는 파일을 여는 system call API로, 해당 함수의 return값을 받기 전 까지는 
+     * main()함수 전체가 잠시 멈춰있어야 한다 
+     * -- > 프로그램의 실행이 pause되고 CPU는 작동을 멈춘다.
      * 즉, CPU자원의 낭비가 발생한다.
      * 따라서, open() 함수가 실행되어 file읽기가 끝나는 동안 CPU로 다른 응용프로그램을 실행시키면?
      * CPU를 쉬지 않고 돌릴 수 있게 된다!!
