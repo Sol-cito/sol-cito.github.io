@@ -89,7 +89,7 @@ First In, First Out, 즉 **대기열에 가장 먼저 들어온 프로세스를 
 
 **FIFO와 유사하나, <u>프로세스가 끝나지 않아도 다시 Queue로 넘기는 알고리즘.</u>**
 
-![image_1](https://github.com/Sol-cito/OS/blob/main/img/Note5_1.png?raw=true)
+![image_1](https://github.com/Sol-cito/OS/blob/main/img/Note5_2.png?raw=true)
 
 Task3가 CPU에서 특정 정해진 시간만큼 실행되다가,
 
