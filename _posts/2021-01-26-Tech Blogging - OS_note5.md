@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[OS] 프로세스와 스케쥴러의 이해 Part 1"
-subtitle: "Operating System Note 5 part 1"
+subtitle: "Process & Scheduler part 1"
 background: '/img/bg_technology.jpg'
 categories: technology
 ---
