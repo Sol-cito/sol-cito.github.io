@@ -107,3 +107,7 @@ Process C가 wait 상태일 때 Process A 와 B는 이미 Running이 끝나고 E
 **CPU가 돌릴 Process가 더 이상 존재하지 않기 때문이다.**
 
 <br/>
+
+---
+위 내용은 '패스트캠퍼스'의 컴퓨터공학 강좌 내용을 요약 정리한 것임을 밝힙니다.
+(https://www.fastcampus.co.kr/)
