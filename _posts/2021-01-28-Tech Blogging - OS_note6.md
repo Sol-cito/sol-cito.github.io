@@ -30,9 +30,7 @@ categories: technology
 
 자세한 프로세스 상태정보는 다음과 같다.
 
-![image_1](http://itwiki.kr/images/d/da/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%83%81%ED%83%9C%EC%A0%84%EC%9D%B4%EB%8F%84.png)
-
-(출처 : http://itwiki.kr/w/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%83%81%ED%83%9C )
+![image_1](https://github.com/Sol-cito/OS/blob/main/img/Note6_1.png?raw=true)
 
 <br/>
 
@@ -44,7 +42,7 @@ categories: technology
 
 **Waiting(혹은 blocked)**은 외부자원을 활용할 때의 대기상태 (Ex. 시스템콜로 프린팅을 한 후 결과 리턴을 받을 때 까지 대기) 
 
--> Wating이 끝나면 **인터럽트**를 통하여 다시 프로세스를 Ready queue에 넣는다.
+-> Wating이 끝나면 **인터럽트**를 통하여 다시 프로세스를 Ready queue에 넣는다. **(Wake up)**
 
 **Ready**는 외부자원 활용이 끝난 후 다시 디스패치를 기다리는 상태를 의미한다.
 
@@ -80,7 +78,7 @@ CPU는 **'어떤 기준으로'** running할 프로세스를 고르게 될까?
 - Process B : Running / Wait / Wait / Wait / Running
 - Process C : Running / Running / Wait / Wait / Wait / Running
 
-우선 **프로세스 상태별로 Queue를 3개 만든다 : ** **Ready Queue, Running Queue, Wait Queue**
+우선 **프로세스 상태별로 Queue를 3개 만든다 : Ready Queue, Running Queue, Wait Queue**
 
 프로세스를 실행시켰을 때, 우선 Running상태인 프로세스들을 Running queue에 넣는다.
 
