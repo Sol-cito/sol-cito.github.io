@@ -5,6 +5,7 @@ subtitle: "Bubble sort, selection sort, insertion sort"
 background: '/img/bg_technology.jpg'
 categories: technology
 ---
+
 정렬 알고리즘을 정리할 필요가 있을 것 같아 Part 1, Part 2, Part 3로 나누어서 정렬 알고리즘을 정리한다.
 
 <br/>
