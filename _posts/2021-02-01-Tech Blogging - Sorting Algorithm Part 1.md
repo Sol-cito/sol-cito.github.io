@@ -77,19 +77,19 @@ int[] arr = {8, 7, 6, 5, 4, 3, 2, 1};
 
 **소스 :** 
 
-```c
-    /* 가장 큰 원소를 맨 끝으로 보낸다 */
-    private void sort() {
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1 - i; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
+```java
+/* 가장 큰 원소를 맨 끝으로 보낸다 */
+private void sort() {
+    for (int i = 0; i < arr.length - 1; i++) {
+        for (int j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
         }
     }
+}
 ```
 
 <br/>
@@ -132,21 +132,21 @@ int[] arr = {6, 5, 3, 1, 8, 7, 2, 4};
 
 **소스 :** 
 
-```c
-    /* 배열의 가장 작은 원소들을 순서대로 0, 1, 2 ... 인덱스에 배치한다 */
-    public void sort() {
-        for (int i = 0; i < arr.length - 1; i++) {
-            int minIdx = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[minIdx]) {
-                    minIdx = j;
-                }
+```java
+/* 배열의 가장 작은 원소들을 순서대로 0, 1, 2 ... 인덱스에 배치한다 */
+public void sort() {
+    for (int i = 0; i < arr.length - 1; i++) {
+        int minIdx = i;
+        for (int j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[minIdx]) {
+                minIdx = j;
             }
-            int temp = arr[i];
-            arr[i] = arr[minIdx];
-            arr[minIdx] = temp;
         }
+        int temp = arr[i];
+        arr[i] = arr[minIdx];
+        arr[minIdx] = temp;
     }
+}
 ```
 
 <br/>
@@ -208,20 +208,22 @@ subarray = {1, 2, 3, 4, 5, 6, 7, 8};
 
 **소스 :**
 
-```c
-    /* n번째 까지의 배열은 이미 정렬되어있다고 가정, n + 1 번째 원소가 들어올 때 마다 앞선 n개의 원소들 사이에서 자리를 찾아 끼워넣는다. */
-    public void sort() {
-        for (int i = 1; i < arr.length; i++) {
-            int val = arr[i];
-            int idx = i;
-            /* n번째 까지의 배열 중 마지막 원소가 비교대상보다 클 때만 for문 진입 */
-            for (int j = i - 1; j >= 0 && arr[j] > val; j--) {
-                arr[idx] = arr[j];
-                idx = j;
-            }
-            arr[idx] = val;
+```java
+/* n번째 까지의 배열은 이미 정렬되어있다고 가정, 
+ * n + 1 번째 원소가 들어올 때 마다 앞선 n개의 원소들 사이에서 
+ * 자리를 찾아 끼워넣는다. */
+public void sort() {
+    for (int i = 1; i < arr.length; i++) {
+        int val = arr[i];
+        int idx = i;
+        /* n번째 까지의 배열 중 마지막 원소가 비교대상보다 클 때만 for문 진입 */
+        for (int j = i - 1; j >= 0 && arr[j] > val; j--) {
+            arr[idx] = arr[j];
+            idx = j;
         }
+        arr[idx] = val;
     }
+}
 ```
 
 <br/>
@@ -250,7 +252,7 @@ Java의 Random 객체를 통해 30만개의 난수를 생성, 같은 배열을 �
 
 **테스트 소스 :**
 
-```c
+```java
 public class Test {
     public static void main(String[] args) {
         int N = 300000; // 배열 사이즈
