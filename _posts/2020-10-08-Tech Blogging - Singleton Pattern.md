@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Singleton Pattern"
-subtitle: "디자인패턴(Java)"
+title: "[디자인패턴] Singleton Pattern"
+subtitle: "Java로 싱글톤 패턴 공부해보기"
 background: '/img/bg_technology.jpg'
 categories: technology
 
@@ -32,7 +32,7 @@ categories: technology
 
   ##### [ Class / Object / Instance ] 
 
-  ```
+  ```java
   class Car { // 클래스
       int number;
       String kind;
@@ -73,7 +73,7 @@ categories: technology
 
 ### 3. Singleton Pattern 구현 예시 (늦은 초기화 Lazy Initialization)
 
-```
+```java
 public class Singleton {
     private static Singleton instance; // 최초 instance는 null
 
@@ -122,7 +122,7 @@ Singleton@10f87f48
     - **synchronized** 는 해당 객체에 lock을 거는 것과 같다. 즉, 하나의 스레드 작업이 완료되기 전까지 다른 스레드가 접근을 못하게 방지하는 것임.
     - 단점 : synchronized 기능 자체가 너무 느림.
 
-  ```
+  ```java
   public class Singleton {
       private static Singleton instance; // 최초 instance는 null
   
@@ -142,7 +142,7 @@ Singleton@10f87f48
     - JVM의 클래스 로더에 의헤 최초로 클래스가 로딩될 때부터 인스턴스를 메모리에 저장하는 방법.
     - 문제점 : 시작할 때부터 메모리를 차지하기 때문에 리소스가 낭비될 수 있음.
 
-  ```
+  ```java
   public class Singleton {
       public static Singleton instance = new Singleton(); // 클래스 로딩 시점에서 인스턴스 생성
   
