@@ -3,7 +3,7 @@ layout: post
 title: "HashMap 자료구조에 대해"
 subtitle: "빠르고 편리한 HashMap의 internal structure"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-datastructure
 ---
 
 ### HashMap은 빠르고 편리하다

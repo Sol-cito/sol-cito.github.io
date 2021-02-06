@@ -3,11 +3,10 @@ layout: post
 title: 프로그래머스 비밀지도[1차] - 2018 카카오 블라인드 (Level 1)
 subtitle: Programmers Algorithm Test Solution
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-algorithm
 ---
 
-```
-문제 설명
+##### 문제 설명
 
 비밀지도
 네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다. 그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기 위해서는 암호를 해독해야 한다. 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.
@@ -19,7 +18,7 @@ categories: technology
 
 네오가 프로도의 비상금을 손에 넣을 수 있도록, 비밀지도의 암호를 해독하는 작업을 도와줄 프로그램을 작성하라.
 
-입력 형식
+##### 입력 형식
 입력으로 지도의 한 변 크기 n 과 2개의 정수 배열 arr1, arr2가 들어온다.
 
 1 ≦ n ≦ 16
@@ -28,7 +27,7 @@ arr1, arr2는 길이 n인 정수 배열로 주어진다.
 출력 형식
 원래의 비밀지도를 해독하여 '#', 공백으로 구성된 문자열 배열로 출력하라.
 
-입출력 예제
+##### 입출력 예제
 매개변수	값
 n	5
 arr1	[9, 20, 28, 18, 11]
@@ -43,7 +42,7 @@ arr2	[27 ,56, 19, 14, 14, 10]
 
 
 출처 : https://programmers.co.kr/learn/courses/30/lessons/17681
-```
+
 ---
 
 #### My solution (Java)

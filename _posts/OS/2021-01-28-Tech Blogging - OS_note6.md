@@ -3,7 +3,7 @@ layout: post
 title: "[OS] 프로세스와 스케쥴러의 이해 Part 2"
 subtitle: "Process & Scheduler part 2"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-os
 ---
 
 > Tip : 프로그램과 프로세스의 차이

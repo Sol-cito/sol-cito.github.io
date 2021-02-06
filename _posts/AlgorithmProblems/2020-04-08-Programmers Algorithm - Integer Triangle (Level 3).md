@@ -3,7 +3,7 @@ layout: post
 title: "프로그래머스 다이나믹 프로그래밍 - 정수 삼각형 (Level 3)"
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-algorithm
 ---
 
 ###### 문제 설명

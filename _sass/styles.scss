@@ -22,3 +22,24 @@
     height: 17px;
     margin-right: 7px;
   }
+
+  .techCategory_ul {
+    display: inline-block;
+    width: 80%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  .techCategory_li {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .techCategory_btn{
+    color: aliceblue;
+  }

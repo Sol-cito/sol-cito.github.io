@@ -3,7 +3,7 @@ layout: post
 title: "프로그래머스 브라이언의 고민 - 2017 Kakao (Level 3) - 실패"
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-algorithm
 ---
 
 ###### 문제 설명

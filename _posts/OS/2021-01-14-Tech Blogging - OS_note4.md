@@ -3,7 +3,7 @@ layout: post
 title: "[OS] 배치처리, 시분할, 멀티 태스킹"
 subtitle: "Operating System Note 4"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-os
 ---
 
 

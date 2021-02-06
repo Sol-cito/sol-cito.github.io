@@ -4,11 +4,10 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-    <header
-        class="masthead"
-        style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header class="masthead"
+    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
     {% else %}
-        <header class="masthead">
+    <header class="masthead">
         {% endif %}
         <div class="overlay"></div>
         <div class="container">
@@ -17,8 +16,38 @@ layout: default
                     <div class="page-heading">
                         <h1>{{ page.title }}</h1>
                         {% if page.description %}
-                                <span class="subheading">{{ page.description }}</span>
+                        <span class="subheading">{{ page.description }}</span>
                         {% endif %}
+                    </div>
+                    <div style="text-align: center;">
+                        <ul class="techCategory_ul">
+                            <li class="techCategory_li">
+                                <a class="techCategory_btn" href="{{"/directory/tech-algorithm" | relative_url
+                                    }}">Algorithm</a>
+                            </li>
+                            <li class="techCategory_li">
+                                <a class="techCategory_btn" href="{{"/directory/tech-datastructure" | relative_url
+                                    }}">Data Structure</a>
+                            </li>
+                            <li class="techCategory_li">
+                                <a class="techCategory_btn" href="{{"/directory/tech-oop" | relative_url }}">OOP</a>
+                            </li>
+                            <li class="techCategory_li">
+                                <a class="techCategory_btn" href="{{"/directory/tech-javaandpython" | relative_url
+                                    }}">Java/Python</a>
+                            </li>
+                            <li class="techCategory_li">
+                                <a class="techCategory_btn" href="{{"/directory/tech-network" | relative_url
+                                    }}">Network</a>
+                            </li>
+                            <li class="techCategory_li">
+                                <a class="techCategory_btn" href="{{"/directory/tech-os" | relative_url }}">OS</a>
+                            </li>
+                            <li class="techCategory_li">
+                                <a class="techCategory_btn" href="{{"/directory/tech-datastructure" | relative_url
+                                    }}">Database</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -28,9 +57,34 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-md-10 mx-auto">
-
+                <p style="color:grey; margin: 0%; font-size: 30px;">
+                    {% if page.url contains "technology" %}
+                    <b>All Tech Posts</b>
+                    {% endif %}
+                    {% if page.url contains "tech-algorithm" %}
+                    <b>All Algorithm Posts</b>
+                    {% endif %}
+                    {% if page.url contains "tech-dataStructure" %}
+                    <b>All DataStructure Posts</b>
+                    {% endif %}
+                    {% if page.url contains "tech-OOP" %}
+                    <b>All OOP Posts</b>
+                    {% endif %}
+                    {% if page.url contains "tech-javaAndPython" %}
+                    <b>All Java&Python Posts</b>
+                    {% endif %}
+                    {% if page.url contains "tech-network" %}
+                    <b>All Network Posts</b>
+                    {% endif %}
+                    {% if page.url contains "tech-OS" %}
+                    <b>All OperatingSytem Posts</b>
+                    {% endif %}
+                    {% if page.url contains "tech-database" %}
+                    <b>All DataBase Posts</b>
+                    {% endif %}
+                </p>
+                <hr>
                 {{ content }}
-
             </div>
         </div>
     </div>

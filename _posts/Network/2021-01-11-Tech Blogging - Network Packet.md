@@ -3,7 +3,7 @@ layout: post
 title: "[Network] 네트워크 패킷"
 subtitle: "웹은'패킷'을 이용하여 데이터를 주고받는다."
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-network
 ---
 
 ## 네트워크 패킷

@@ -3,7 +3,7 @@ layout: post
 title: "프로그래머스 카카오 Winter Coding- 방문길이 (Level 3)"
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-algorithm
 ---
 ###### 문제 설명
 

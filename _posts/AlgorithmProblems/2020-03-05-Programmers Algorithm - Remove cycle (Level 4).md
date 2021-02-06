@@ -3,19 +3,18 @@ layout: post
 title: 프로그래머스 그래프 - 사이클 제거 (Level 4)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-algorithm
 ---
 
 
-```
-문제 설명
+##### 문제 설명
 n개의 노드로 구성된 그래프에서 하나의 노드만을 제거해서 사이클이 없도록 만들고 싶습니다.
 
 노드의 개수 n, 노드간의 연결 edges가 매개변수로 주어질 때, 노드를 딱 하나 제거해서 그래프를 사이클이 없도록 만들 수 있다면 
 해당 노드의 번호를 return 하도록 solution 함수를 완성하세요.
 단, 그런 노드가 없다면 0을 return하고, 여러 개라면 노드의 번호의 합을 return하세요.
 
-제한사항
+##### 제한사항
 
 노드 번호는 1 부터 시작합니다.
 주어진 그래프에 반드시 하나 이상의 사이클은 있습니다.
@@ -30,8 +29,6 @@ n	edges	result
 
 
 출처 : https://programmers.co.kr/learn/courses/30/lessons/49188
-```
-
 
 
 #### My solution (Java)

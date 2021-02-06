@@ -3,11 +3,10 @@ layout: post
 title: 프로그래머스 자물쇠와 열쇠 - 2020 카카오 블라인드 (Level 3)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-algorithm
 ---
 
-```
-문제 설명
+##### 문제 설명
 고고학자인 튜브는 고대 유적지에서 보물과 유적이 가득할 것으로 추정되는 비밀의 문을 발견하였습니다. 그런데 문을 열려고 살펴보니 특이한 형태의 자물쇠로 잠겨 있었고 문 앞에는 특이한 형태의 열쇠와 함께 자물쇠를 푸는 방법에 대해 다음과 같이 설명해 주는 종이가 발견되었습니다.
 
 잠겨있는 자물쇠는 격자 한 칸의 크기가 1 x 1인 N x N 크기의 정사각 격자 형태이고 특이한 모양의 열쇠는 M x M 크기인 정사각 격자 형태로 되어 있습니다.
@@ -16,7 +15,7 @@ categories: technology
 
 열쇠를 나타내는 2차원 배열 key와 자물쇠를 나타내는 2차원 배열 lock이 매개변수로 주어질 때, 열쇠로 자물쇠를 열수 있으면 true를, 열 수 없으면 false를 return 하도록 solution 함수를 완성해주세요.
 
-제한사항
+##### 제한사항
 key는 M x M(3 ≤ M ≤ 20, M은 자연수)크기 2차원 배열입니다.
 lock은 N x N(3 ≤ N ≤ 20, N은 자연수)크기 2차원 배열입니다.
 M은 항상 N 이하입니다.
@@ -31,7 +30,6 @@ key를 시계 방향으로 90도 회전하고, 오른쪽으로 한 칸, 아래�
 
 
 출처 : https://programmers.co.kr/learn/courses/30/lessons/60059
-```
 
 
 

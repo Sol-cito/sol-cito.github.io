@@ -3,7 +3,7 @@ layout: post
 title: "[Network] OSI 1계층 - 물리계층"
 subtitle: "전기신호를 데이터로, 데이터를 전기신호로"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-network
 ---
 
 ## [Network] 물리계층 (1계층)

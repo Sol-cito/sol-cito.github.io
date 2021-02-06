@@ -3,7 +3,7 @@ layout: post
 title: "[Network] OSI 7계층 모델, TCP/IP 4계층 모델"
 subtitle: "데이터를 주고받기 위한 통신 규격"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-network
 ---
 
 ## OSI 7계층 모델 , TCP/IP 4계층 모델

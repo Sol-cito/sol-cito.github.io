@@ -3,10 +3,10 @@ layout: post
 title: 프로그래머스 다트게임 - 2018 카카오 블라인드
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-algorithm
 ---
 
-```
+##### 문제 설명
 카카오톡 게임별의 하반기 신규 서비스로 다트 게임을 출시하기로 했다. 다트 게임은 다트판에 다트를 세 차례 던져 그 점수의 합계로 실력을 겨루는 게임으로, 모두가 간단히 즐길 수 있다.
 갓 입사한 무지는 코딩 실력을 인정받아 게임의 핵심 부분인 점수 계산 로직을 맡게 되었다. 다트 게임의 점수 계산 로직은 아래와 같다.
 
@@ -21,7 +21,7 @@ Single(S), Double(D), Triple(T)은 점수마다 하나씩 존재한다.
 스타상(*), 아차상(#)은 점수마다 둘 중 하나만 존재할 수 있으며, 존재하지 않을 수도 있다.
 0~10의 정수와 문자 S, D, T, *, #로 구성된 문자열이 입력될 시 총점수를 반환하는 함수를 작성하라.
 
-입력 형식
+##### 입력 형식
 점수|보너스|[옵션]으로 이루어진 문자열 3세트.
 예) 1S2D*3T
 
@@ -32,7 +32,7 @@ Single(S), Double(D), Triple(T)은 점수마다 하나씩 존재한다.
 3번의 기회에서 얻은 점수 합계에 해당하는 정수값을 출력한다.
 예) 37
 
-입출력 예제
+##### 입출력 예제
 예제	dartResult	answer	설명
 1	1S2D*3T	37	11 * 2 + 22 * 2 + 33
 2	1D2S#10S	9	12 + 21 * (-1) + 101
@@ -43,7 +43,6 @@ Single(S), Double(D), Triple(T)은 점수마다 하나씩 존재한다.
 7	1D2S3T*	59	12 + 21 * 2 + 33 * 2
 
 출처 : https://programmers.co.kr/learn/courses/30/lessons/17682
-```
 
 
 

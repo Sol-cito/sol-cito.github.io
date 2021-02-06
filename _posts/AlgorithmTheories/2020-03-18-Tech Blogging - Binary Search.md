@@ -3,7 +3,7 @@ layout: post
 title: "알고리즘/자료구조 공부 : 이분탐색(Binary Search)"
 subtitle: "Algorithm & Data Structure"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-algorithm
 
 ---
 

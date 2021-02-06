@@ -3,7 +3,7 @@ layout: post
 title: "[OS] 운영체제의 역사"
 subtitle: "Operating System Note 2"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-os
 ---
 
 

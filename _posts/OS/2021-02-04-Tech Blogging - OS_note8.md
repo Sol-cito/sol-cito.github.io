@@ -3,7 +3,7 @@ layout: post
 title: "[OS] 프로세스와 스케쥴러의 이해 Part 4"
 subtitle: "Context Switching에 대하여"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-os
 ---
 
 #### 프로세스와 컨텍스트 스위칭

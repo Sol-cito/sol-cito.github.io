@@ -3,7 +3,7 @@ layout: post
 title: "JAVA로 Stack 구현해보기"
 subtitle: "ArrayList 와 Pointer로 push, pop, isEmpty, peek, clear 구현"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-datastructure
 ---
 
 

@@ -3,7 +3,7 @@ layout: post
 title: "JAVA 파헤치기 (Part 2)"
 subtitle: "public static void main(String arg[]) 의 정체"
 background: '/img/bg_technology.jpg'
-categories: technology
+categories: technology/tech-javaandpython
 ---
 
 
