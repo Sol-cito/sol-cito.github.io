@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 그래프 - 사이클 제거 (Level 4)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 

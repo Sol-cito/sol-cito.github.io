@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 카카오프렌즈 컬러링북 - 2017 카카오코드 (Level 2)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 ##### 문제 설명

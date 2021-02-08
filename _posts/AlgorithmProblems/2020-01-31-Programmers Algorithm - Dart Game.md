@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 다트게임 - 2018 카카오 블라인드
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 ##### 문제 설명

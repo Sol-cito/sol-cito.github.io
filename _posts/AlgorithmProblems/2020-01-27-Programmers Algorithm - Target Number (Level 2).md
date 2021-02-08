@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 탐색 - 타겟넘버 (Level 2)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 

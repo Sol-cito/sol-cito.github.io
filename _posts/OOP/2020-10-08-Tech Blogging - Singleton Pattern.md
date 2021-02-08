@@ -3,7 +3,7 @@ layout: post
 title: "[디자인패턴] Singleton Pattern"
 subtitle: "Java로 싱글톤 패턴 공부해보기"
 background: '/img/bg_technology.jpg'
-categories: technology/tech-oop
+categories: technology-oop
 
 ---
 

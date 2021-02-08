@@ -3,7 +3,8 @@ layout: post
 title: "[OS] 프로세스와 스케쥴러의 이해 Part 3"
 subtitle: "Interrupt에 대하여"
 background: '/img/bg_technology.jpg'
-categories: technology/tech-os
+categories: technology-os
+
 ---
 
 

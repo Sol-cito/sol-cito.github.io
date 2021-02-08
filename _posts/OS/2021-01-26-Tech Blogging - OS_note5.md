@@ -3,7 +3,8 @@ layout: post
 title: "[OS] 프로세스와 스케쥴러의 이해 Part 1"
 subtitle: "Process & Scheduler part 1"
 background: '/img/bg_technology.jpg'
-categories: technology/tech-os
+categories: technology-os
+
 ---
 
 > 스케쥴링 알고리즘에 대하여

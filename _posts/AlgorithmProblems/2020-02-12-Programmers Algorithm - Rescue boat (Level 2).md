@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 탐욕법 - 구명보트 (Level 2)
 subtitle: Programmers Algorithm Test Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 

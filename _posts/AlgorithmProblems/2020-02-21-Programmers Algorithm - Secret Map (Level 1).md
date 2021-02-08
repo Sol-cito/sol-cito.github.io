@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 비밀지도[1차] - 2018 카카오 블라인드 (Level 1)
 subtitle: Programmers Algorithm Test Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 ##### 문제 설명

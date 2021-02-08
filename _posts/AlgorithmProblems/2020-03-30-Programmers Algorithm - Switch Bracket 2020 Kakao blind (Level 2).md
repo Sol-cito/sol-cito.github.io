@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 괄호변환 - 2020 Kakao blind (Level 2)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 

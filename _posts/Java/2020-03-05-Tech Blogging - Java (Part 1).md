@@ -3,7 +3,7 @@ layout: post
 title: "JAVA 파헤치기 (Part 1)"
 subtitle: "Javac 와 Class 파일, 그리고 WORA"
 background: '/img/bg_technology.jpg'
-categories: technology/tech-javaandpython
+categories: technology-javaandpython
 
 ---
 

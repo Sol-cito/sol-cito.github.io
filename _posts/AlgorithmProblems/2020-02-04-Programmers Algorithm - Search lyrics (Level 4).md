@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 가사검색 - 2020카카오공채 (Level 4) (효율성 3개 통과 못함)
 subtitle: Programmers Algorithm Test Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 

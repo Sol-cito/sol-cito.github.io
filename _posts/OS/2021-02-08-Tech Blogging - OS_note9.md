@@ -3,7 +3,8 @@ layout: post
 title: "[OS] 프로세스와 스케쥴러의 이해 Part 5"
 subtitle: "InterProcess Communication - IPC"
 background: '/img/bg_technology.jpg'
-categories: technology/tech-os
+categories: technology-os
+
 ---
 
 #### 프로세스간 커뮤니케이션

@@ -3,7 +3,8 @@ layout: post
 title: "[OS] 운영체제 개괄"
 subtitle: "Operating System Note 1"
 background: '/img/bg_technology.jpg'
-categories: technology/tech-os
+categories: technology-os
+
 ---
 
 

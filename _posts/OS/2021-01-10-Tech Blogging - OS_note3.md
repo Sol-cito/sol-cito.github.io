@@ -3,7 +3,8 @@ layout: post
 title: "[OS] 운영체제의 구조"
 subtitle: "Operating System Note 3"
 background: '/img/bg_technology.jpg'
-categories: technology/tech-os
+categories: technology-os
+
 ---
 
 

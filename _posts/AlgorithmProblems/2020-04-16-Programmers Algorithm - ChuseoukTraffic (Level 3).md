@@ -3,7 +3,8 @@ layout: post
 title: "프로그래머스 카카오 - 추석트래픽 (Level 3)"
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 ###### 문제 설명

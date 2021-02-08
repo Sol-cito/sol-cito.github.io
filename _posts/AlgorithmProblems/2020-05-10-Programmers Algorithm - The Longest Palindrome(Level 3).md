@@ -3,7 +3,8 @@ layout: post
 title: "프로그래머스 가장 긴 팰린드롬 (Level 3)"
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 ###### 문제 설명

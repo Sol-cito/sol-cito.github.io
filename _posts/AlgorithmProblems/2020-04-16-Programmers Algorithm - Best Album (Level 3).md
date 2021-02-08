@@ -3,7 +3,8 @@ layout: post
 title: "프로그래머스 해시 - 베스트앨범 (Level 3)"
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 

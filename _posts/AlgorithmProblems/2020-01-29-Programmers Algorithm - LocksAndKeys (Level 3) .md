@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 자물쇠와 열쇠 - 2020 카카오 블라인드 (Level 3)
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 ##### 문제 설명

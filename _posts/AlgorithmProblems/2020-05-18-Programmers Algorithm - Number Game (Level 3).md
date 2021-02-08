@@ -3,7 +3,8 @@ layout: post
 title: "프로그래머스 숫자게임 - 2018 Summer winter 코딩 (Level 3)"
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 ###### 문제 설명

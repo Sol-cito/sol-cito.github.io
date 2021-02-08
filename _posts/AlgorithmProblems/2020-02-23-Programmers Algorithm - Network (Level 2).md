@@ -3,7 +3,8 @@ layout: post
 title: 프로그래머스 BFS/DFS -  네트워크 (Level 3)
 subtitle: Programmers Algorithm Test Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 

@@ -3,7 +3,8 @@ layout: post
 title: "프로그래머스 카카오 Winter Coding- 종이접기 (Level 3)"
 subtitle: Algorithm Solution
 background: '/img/bg_technology.jpg'
-categories: technology/tech-algorithm
+categories: technology-algorithm
+
 ---
 
 ###### 문제 설명
