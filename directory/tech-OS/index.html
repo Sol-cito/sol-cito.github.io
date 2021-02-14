@@ -8,7 +8,7 @@ background: '/img/bg_technology.jpg'
     {% if post.url contains "technology-os" %}
         <article class="post-preview">
             <a href="{{ post.url }}">
-                <h2 cla ss="post-title">{{ post.title }}</h2>
+                <h2 class="post-title">{{ post.title }}</h2>
                 {% if post.subtitle %}
                     <h3 class="post-subtitle">{{ post.subtitle }}</h3>
                     <a class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</a>
