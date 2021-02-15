@@ -39,6 +39,10 @@ layout: default
                                         site.categories.technology-javaandpython.size }})</a>
                                 </li>
                                 <li class="techCategory_li">
+                                    <a class="techCategory_btn" href="{{"/directory/tech-web" | relative_url }}">WEB ({{
+                                        site.categories.technology-web.size }})</a>
+                                </li>
+                                <li class="techCategory_li">
                                     <a class="techCategory_btn" href="{{"/directory/tech-network" | relative_url }}">Network ({{
                                         site.categories.technology-network.size }})</a>
                                 </li>
@@ -77,6 +81,9 @@ layout: default
                     {% endif %}
                     {% if page.url contains "tech-javaAndPython" %}
                     <b>Java & Python </b>
+                    {% endif %}
+                    {% if page.url contains "tech-web" %}
+                    <b>WEB </b>
                     {% endif %}
                     {% if page.url contains "tech-network" %}
                     <b>Network</b>
