@@ -1,0 +1,37 @@
+title:              Sol's Blog
+email:              dsolkim1030@gmail.com
+description:        "Push through, no matter what the obstacles are, it's worth it."
+author:             Sol
+# baseurl:            ""
+url:                "https://sol-cito.github.io"
+
+# Social Profiles
+twitter_username:   
+github_username:    Sol-cito
+facebook_username:  facebook
+linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+# Code highlighting
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+permalink: /:categories/:year/:month/:day/:title
+
+# Font Setting(Korean)
+google_fonts : "Nanum+Gothic:400,700"
+
+# Disqus setting
+disqus_shortname: sol-cito-github-io
