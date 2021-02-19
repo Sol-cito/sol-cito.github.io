@@ -3,3 +3,9 @@ _site
 node_modules
 Gemfile.lock
 *.gem
+_config.yml
+sitemap.xml
+img/
+_site/
+_sass/
+_posts/
