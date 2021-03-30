@@ -4,7 +4,6 @@ title: "[Network] OSI 3계층 - 네트워크 계층"
 subtitle: "IP, Subnet, Router "
 background: '/img/bg_technology.jpg'
 categories: technology-network
-
 ---
 
 ## [Network] 네트워크 계층 (3계층)
