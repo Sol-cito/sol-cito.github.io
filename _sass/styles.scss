@@ -44,3 +44,33 @@
     font-size: medium;
     color: aliceblue;
   }
+
+  /* post 의 table 관련 속성 customizing */
+  table{
+    width: 100%;
+    border: 2px solid;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+  }
+
+  th{
+    background-color: rgb(206, 206, 206);
+    border:2px solid;
+    padding: 10px;
+    border-color: black;
+  }
+
+  td{
+    border:2px solid;
+    padding: 10px;
+    border-color: black;
+  }
+
+  /*  blockquote 커스터마이징 */
+  blockquote{
+    border-left: 5px solid #a8b1bb;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
