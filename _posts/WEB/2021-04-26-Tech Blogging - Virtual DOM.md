@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[WEB] React는 왜 빠른가? - Virtual DOM"
-subtitle: "Session and cookies are cached to store something"
+subtitle: "BOM, DOM, Virtual DOM"
 background: '/img/bg_technology.jpg'
 categories: technology-web
 ---
