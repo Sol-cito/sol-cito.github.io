@@ -1,6 +1,10 @@
-| layout | title                        | subtitle            | background             | categories               |
-| ------ | ---------------------------- | ------------------- | ---------------------- | ------------------------ |
-| post   | [Java] Static과 final 키워드 | Constant, immutable | /img/bg_technology.jpg | technology-javaandpython |
+---
+layout: post
+title: "[Java] Static과 final 키워드"
+subtitle: "Constant, immutable"
+background: '/img/bg_technology.jpg'
+categories: technology-javaandpython
+---
 
 ```java
 public static final int OK = 1;
