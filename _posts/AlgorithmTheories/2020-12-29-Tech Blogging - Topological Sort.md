@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[알고리즘] 위상정렬 (Topological Sort)"
+title: "[Algorithm] 위상정렬 (Topological Sort)"
 subtitle: "Algorithm Theory"
 background: '/img/bg_technology.jpg'
 categories: technology-algorithm

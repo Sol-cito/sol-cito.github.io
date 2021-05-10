@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "프로그래머스 지형이동 (Level 4)"
+title: "[Algorithm] 프로그래머스 지형이동 (Level 4)"
 subtitle: Implementation, heap solution
 background: '/img/bg_technology.jpg'
 categories: technology-algorithm
