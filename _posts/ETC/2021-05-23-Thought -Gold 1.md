@@ -7,7 +7,7 @@ categories: thought
 comments: false
 ---
 
-![image](https://user-images.githubusercontent.com/50112481/119260006-cf173980-bc0b-11eb-801a-4910f9b52c1c.jpg)
+![image](https://user-images.githubusercontent.com/50112481/119260276-21a52580-bc0d-11eb-8d2c-d4f68d658628.jpg)
 
 백준 Gold1 을 달성했다..
 
