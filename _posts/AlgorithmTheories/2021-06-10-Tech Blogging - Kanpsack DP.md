@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "[Algorithm] Kanpsack 알고리즘"
+title: "[Algorithm] Knapsack 알고리즘"
 subtitle: "Dynamic Programming"
 background: '/img/bg_technology.jpg'
 categories: technology-algorithm
 ---
 
-**Kanpsack, 즉 배낭문제**는 DP의 한 유형으로,
+**Knapsack, 즉 배낭문제**는 DP의 한 유형으로,
 
 **두 가지 기준**에 알맞게 최적값을 구하는 유형의 DP이다.
 
