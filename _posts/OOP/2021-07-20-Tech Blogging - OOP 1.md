@@ -110,8 +110,8 @@ Member member = new Member();
 
 (...)
 
-if(member.getMembershipKind == "Gold" || member.getMembershipKind == "Silver" 
-   || member.getMembershipKind == "Bronze"){
+if(member.getMembershipKind.equals("Gold") || member.getMembershipKind.equals("Silver") 
+   || member.getMembershipKind.equals("Bronze")){
     // 선물을 주는 코드
 }
 ```
@@ -170,7 +170,7 @@ isIncludedForEvent 메소드 또한 그 구현 내용을 **외부에 보여주�
 
 이 전략을 **Tell, Don't ask** 라고 한다**(Don't ask but tell me** 가 더 적당하지 않을까 싶긴 한데...).
 
-즉, **다른 객체에게 데이터를 묻지 말고(Don't ask), **
+즉, **다른 객체에게 데이터를 묻지 말고(Don't ask),**
 
 **그 객체에게 내가 원하는 기능(ex)현재 그 멤버가 이벤트 대상인지 확인하는 기능)을 수행하여 결과를 말해달라고(Tell)** 하는 것이다.
 
