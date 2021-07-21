@@ -3,7 +3,7 @@ layout: post
 title: "[OOP] OOP 바로알기 (1)"
 subtitle: "객체는 '기능'으로 정의된다."
 background: '/img/bg_technology.jpg'
-categories: technology-os
+categories: technology-oop
 
 ---
 

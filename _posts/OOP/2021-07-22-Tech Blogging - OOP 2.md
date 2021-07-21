@@ -3,7 +3,7 @@ layout: post
 title: "[OOP] OOP 바로알기 (2)"
 subtitle: "추상화의 유연함"
 background: '/img/bg_technology.jpg'
-categories: technology-os
+categories: technology-oop
 ---
 
 ### 추상화
